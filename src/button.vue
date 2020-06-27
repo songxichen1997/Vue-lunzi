@@ -14,7 +14,7 @@
       iconPosition: {
         type: String,
         default: 'left',
-        validator (value) {
+        validator(value) {
           return value === 'left' || value === 'right';
         }
       }
@@ -35,6 +35,7 @@
     border-radius: var(--border-radius);
     border: 1px solid var(--border-color);
     background: var(--button-bg);
+
     > .content {
       order: 2;
     }
