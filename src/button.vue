@@ -11,7 +11,16 @@
 
 <script>
   export default {
-    props: ['icon', 'iconPosition']
+    props: {
+      icon: {},
+      iconPosition: {
+        type: String,
+        default: 'left',
+        validator (value) {
+          return value === 'left' || value === 'right';
+        }
+      }
+    }
   }
 </script>
 
@@ -21,6 +30,7 @@
     justify-content: center;
     align-items: center;
     vertical-align: middle;
+    line-height: 14px;
     font-size: var(--font-size);
     height: var(--button-height);
     padding: 0 1em;
