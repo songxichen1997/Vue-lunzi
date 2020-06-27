@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
-    <meta charset="UTF-8">
-    <title>lunzi</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        :root {
-            --button-height: 32px;
-            --font-size: 14px;
-            --border-radius: 4px;
-            --border-color: #999;
-            --button-bg: white;
-            --border-color-hover: #666;
-            --button-active-bg: #eee;
-            --color: #333;
-        }
-        #app {
-            margin: 20px;
-        }
-        body {
-            font-size: var(--font-size);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>lunzi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --button-height: 32px;
+      --font-size: 14px;
+      --border-radius: 4px;
+      --border-color: #999;
+      --button-bg: white;
+      --border-color-hover: #666;
+      --button-active-bg: #eee;
+      --color: #333;
+    }
+
+    #app {
+      margin: 20px;
+    }
+
+    body {
+      font-size: var(--font-size);
+    }
+  </style>
+  <style>
+    .icon {
+      width: 1em;
+      height: 1em;
+    }
+  </style>
 </head>
 <body>
-    <div id="app">
-        <g-button></g-button>
-    </div>
+<div id="app">
+  <g-button>按钮</g-button>
+  <g-button icon="settings" icon-position="right">按钮</g-button>
+  <g-button icon="settings">按钮</g-button>
+
+</div>
 <script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_1907839_gowcok09osm.js"></script>
 </body>
 </html>
