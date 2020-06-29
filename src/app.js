@@ -15,7 +15,13 @@ new Vue({
   data(){
     return {
       loading1: false,
-      loading2: false
+      loading2: false,
+      message: ''
+    }
+  },
+  methods: {
+    inputChange(e) {
+      console.log(e);
     }
   }
 })
